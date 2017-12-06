@@ -1013,9 +1013,9 @@ type TKEY struct {
 	Mode       uint16
 	Error      uint16
 	KeySize    uint16
-	Key        string `dns:"size-hex:KeySize"`
+	Key        string
 	OtherLen   uint16
-	OtherData  string `dns:"size-hex:OtherLen"`
+	OtherData  string
 }
 
 // TKEY has no official presentation format, but this will suffice.
